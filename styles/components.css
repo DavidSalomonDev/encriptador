@@ -1,0 +1,22 @@
+button {
+	padding: 1.5rem 1rem;
+	border-radius: 1rem;
+	border: 1px solid var(--dark-blue-300);
+	background-color: transparent;
+	width: 20rem;
+	transition: 0.3s all ease-in;
+}
+
+button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+button:active {
+	transform: scale(1);
+}
+
+.btn_main {
+	background-color: var(--dark-blue-300);
+	color: var(--white);
+}
