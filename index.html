@@ -21,7 +21,7 @@
 				<textarea
 					name="input-text"
 					placeholder="Ingrese el texto aquí"
-					id="input-txt"
+					id="input-textarea"
 					cols="50"
 					rows="10"
 				></textarea>
@@ -30,21 +30,26 @@
 						<h4>❗️ Solo letras minúsculas y sin acentos</h4>
 					</div>
 					<div class="input-text__buttons">
-						<button class="btn_main">Encriptar</button>
-						<button>Desencriptar</button>
+						<button class="btn_main" id="encrypt">Encriptar</button>
+						<button id="decrypt">Desencriptar</button>
 					</div>
 				</div>
 			</div>
 			<div class="output-text">
-				<div class="output-text__placeholder">
+				<div class="output-text__placeholder" id="text-placeholder">
 					<img src="./assets/guy.png" alt="No hay nada" />
 					<h2>Ningún mensaje fue encontrado</h2>
 					<p>Ingresa el texto que desees encriptar o desencriptar</p>
+				</div>
+				<div class="output-text__result disable" id="textEl-result">
+					<p class="result-text" id="result-text"></p>
+					<button id="copy">Copiar</button>
 				</div>
 			</div>
 		</div>
 		<footer>
 			<p>Creado por davidsalomon 2023 como parte del curso Oracle One</p>
 		</footer>
+		<script src="./scripts/index.js" type="module"></script>
 	</body>
 </html>
